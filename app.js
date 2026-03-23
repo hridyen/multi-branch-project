@@ -4,7 +4,7 @@ const app = express();
 const branch = process.env.BRANCH || "unknown";
 
 app.get("/", (req, res) => {
-    res.send(`🔥 Running from branch: ${branch}`);
+    res.send(`Running from branch: ${branch}`);
 });
 
 app.listen(3000, () => {
